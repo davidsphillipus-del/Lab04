@@ -196,4 +196,7 @@ document.querySelectorAll('input[name="year"]').forEach(radio => {
 // Initialize page
 document.addEventListener('DOMContentLoaded', function() {
     console.log('NUST Student Registration System loaded successfully');
+
+    // Focus on first input for better accessibility
+    document.getElementById('firstName').focus();
 });
