@@ -48,7 +48,7 @@ Lab04/
 - **First Name** (required)
 - **Last Name** (required)
 - **Email** (required, validated format)
-- **Programme** (required, dropdown selection)
+- **Programme** (required, text input for any programme)
 - **Year of Study** (required, radio buttons 1-4)
 - **Interests** (optional, textarea)
 - **Photo URL** (optional, with fallback placeholder)
@@ -56,6 +56,7 @@ Lab04/
 ### Validation Rules
 - All required fields must be filled
 - Email must follow valid format (regex validation)
+- Programme must be at least 2 characters long
 - Year of study must be selected
 - Real-time validation on field blur
 - Form submission prevented if validation fails
@@ -108,7 +109,7 @@ This project includes meaningful commit messages following the assignment requir
 - Clean, maintainable code structure
 - Duplicate email validation
 - Auto-focus on first input field
-- Extended programme options
+- Flexible programme text input (supports any programme)
 
 ## Notes
 
