@@ -59,13 +59,30 @@ function validateYear() {
     }
 }
 
+function validateProgramme() {
+    const field = document.getElementById('programme');
+    const errorElement = document.getElementById('err-programme');
+    const value = field.value.trim();
+
+    if (!value) {
+        errorElement.textContent = 'Programme is required.';
+        return false;
+    } else if (value.length < 2) {
+        errorElement.textContent = 'Programme name must be at least 2 characters long.';
+        return false;
+    } else {
+        errorElement.textContent = '';
+        return true;
+    }
+}
+
 function validateForm() {
     const firstName = validateRequired('firstName', 'First Name');
     const lastName = validateRequired('lastName', 'Last Name');
     const email = validateEmail(document.getElementById('email').value);
-    const programme = validateRequired('programme', 'Programme');
+    const programme = validateProgramme();
     const year = validateYear();
-    
+
     return firstName && lastName && email && programme && year;
 }
 
@@ -191,8 +208,8 @@ document.getElementById('email').addEventListener('blur', (e) => {
     validateEmail(e.target.value);
 });
 
-document.getElementById('programme').addEventListener('change', () => {
-    validateRequired('programme', 'Programme');
+document.getElementById('programme').addEventListener('blur', () => {
+    validateProgramme();
 });
 
 document.querySelectorAll('input[name="year"]').forEach(radio => {

@@ -89,12 +89,18 @@ input, select, textarea {
     border-radius: 4px;
     font-size: 1rem;
     transition: border-color 0.3s ease;
+    font-family: inherit;
 }
 
 input:focus, select:focus, textarea:focus {
     outline: none;
     border-color: var(--nust-light-blue);
     box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.1);
+}
+
+input::placeholder {
+    color: var(--nust-gray);
+    opacity: 0.7;
 }
 
 /* Radio buttons */
