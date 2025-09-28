@@ -106,6 +106,9 @@ This project includes meaningful commit messages following the assignment requir
 - Hover effects and smooth transitions
 - Fallback images for profile photos
 - Clean, maintainable code structure
+- Duplicate email validation
+- Auto-focus on first input field
+- Extended programme options
 
 ## Notes
 
