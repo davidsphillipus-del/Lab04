@@ -2,8 +2,8 @@
 
 ## Lab 4 Assignment - WAD621S
 
-**Student Name:** [Your Name Here]  
-**Student Number:** [Your Student Number]  
+**Student Name:** David Phillipus 
+**Student Number:** 224014978  
 **Course:** WAD621S - Web Application Development  
 **Assignment:** Lab 4 - Registration → Profile Cards
 
@@ -14,24 +14,24 @@ This project implements a student registration system for NUST (Namibia Universi
 ## Features
 
 ### Core Functionality
-- ✅ **Accessible Registration Form** - Complete form with proper labels, semantic HTML, and keyboard navigation
-- ✅ **Form Validation** - Real-time validation for required fields, email format, and year selection
-- ✅ **Dynamic Profile Cards** - Automatically generated profile cards for each submission
-- ✅ **Summary Table** - Synchronized table that updates with card additions and removals
-- ✅ **Remove Functionality** - Delete both cards and corresponding table rows
+- **Accessible Registration Form** - Complete form with proper labels, semantic HTML, and keyboard navigation
+- **Form Validation** - Real-time validation for required fields, email format, and year selection
+- **Dynamic Profile Cards** - Automatically generated profile cards for each submission
+- **Summary Table** - Synchronized table that updates with card additions and removals
+-  **Remove Functionality** - Delete both cards and corresponding table rows
 
 ### Accessibility Features
-- ✅ **Semantic HTML** - Proper use of form elements, fieldsets, and labels
-- ✅ **ARIA Support** - Live regions for screen reader feedback
-- ✅ **Keyboard Navigation** - Full keyboard accessibility
-- ✅ **Error Messages** - Inline validation with clear error descriptions
-- ✅ **Color Contrast** - NUST brand colors with adequate contrast ratios
+- **Semantic HTML** - Proper use of form elements, fieldsets, and labels
+- **ARIA Support** - Live regions for screen reader feedback
+- **Keyboard Navigation** - Full keyboard accessibility
+- **Error Messages** - Inline validation with clear error descriptions
+- **Color Contrast** - NUST brand colors with adequate contrast ratios
 
 ### Design Features
-- ✅ **NUST Branding** - Official NUST colors (Blue #003366, Orange #FF6600)
-- ✅ **Responsive Design** - Mobile-friendly layout
-- ✅ **Modern UI** - Clean, professional interface with hover effects
-- ✅ **Grid Layout** - Responsive card grid system
+-  **NUST Branding** - Official NUST colors (Blue #003366, Orange #FF6600)
+-  **Responsive Design** - Mobile-friendly layout
+-  **Modern UI** - Clean, professional interface with hover effects
+-  **Grid Layout** - Responsive card grid system
 
 ## Technical Implementation
 
@@ -89,17 +89,6 @@ This project includes meaningful commit messages following the assignment requir
 - Table integration and synchronization
 - Final testing and documentation
 
-## Assignment Compliance
-
-### Rubric Checklist (30 marks)
-
-| Criterion | Status | Notes |
-|-----------|--------|-------|
-| **Form completeness + accessibility (6 marks)** | ✅ Complete | All labels, input types, responsive design, accessibility features implemented |
-| **Validation & error handling (6 marks)** | ✅ Complete | Inline messages, prevents invalid submits, aria-live regions |
-| **Profile card creation (8 marks)** | ✅ Complete | Dynamic DOM generation with remove buttons |
-| **Summary table integration (6 marks)** | ✅ Complete | Accurate synchronization with form submissions and removals |
-| **Code quality (4 marks)** | ✅ Complete | Semantic HTML, clean CSS, readable JavaScript with comments |
 
 ### Additional Features
 - Professional NUST branding and color scheme
@@ -128,9 +117,3 @@ Potential improvements that could be added:
 - Search/filter functionality
 - Export to CSV feature
 - Photo upload capability
-
----
-
-**Submission Date:** [Add submission date]  
-**Course Instructor:** [Add instructor name]  
-**Institution:** Namibia University of Science and Technology
