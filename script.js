@@ -26,7 +26,7 @@ function validateRequired(fieldId, fieldName) {
 function validateEmail(value) {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     const errorElement = document.getElementById('err-email');
-    
+
     if (!value.trim()) {
         errorElement.textContent = 'Email is required.';
         return false;
@@ -34,6 +34,12 @@ function validateEmail(value) {
         errorElement.textContent = 'Please enter a valid email address.';
         return false;
     } else {
+        // Check for duplicate email
+        const isDuplicate = studentProfiles.some(profile => profile.email.toLowerCase() === value.toLowerCase());
+        if (isDuplicate) {
+            errorElement.textContent = 'This email is already registered.';
+            return false;
+        }
         errorElement.textContent = '';
         return true;
     }
