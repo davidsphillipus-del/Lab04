@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NUST Student Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>NUST Student Registration</h1>
+            <p>Register your profile and join our student community</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="form-section">
+            <h2>Registration Form</h2>
+            <form id="regForm" novalidate>
+                <div class="form-group">
+                    <label for="firstName">First Name <span aria-hidden="true">*</span></label>
+                    <input type="text" id="firstName" name="firstName" required>
+                    <small class="error" id="err-firstName"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="lastName">Last Name <span aria-hidden="true">*</span></label>
+                    <input type="text" id="lastName" name="lastName" required>
+                    <small class="error" id="err-lastName"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email <span aria-hidden="true">*</span></label>
+                    <input type="email" id="email" name="email" required>
+                    <small class="error" id="err-email"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="programme">Programme <span aria-hidden="true">*</span></label>
+                    <select id="programme" name="programme" required>
+                        <option value="">Select your programme</option>
+                        <option value="Computer Science">Computer Science</option>
+                        <option value="Information Technology">Information Technology</option>
+                        <option value="Software Engineering">Software Engineering</option>
+                        <option value="Data Science">Data Science</option>
+                        <option value="Cybersecurity">Cybersecurity</option>
+                        <option value="Business Information Systems">Business Information Systems</option>
+                    </select>
+                    <small class="error" id="err-programme"></small>
+                </div>
+
+                <fieldset class="form-group">
+                    <legend>Year of Study <span aria-hidden="true">*</span></legend>
+                    <div class="radio-group">
+                        <label><input type="radio" name="year" value="1" required> Year 1</label>
+                        <label><input type="radio" name="year" value="2"> Year 2</label>
+                        <label><input type="radio" name="year" value="3"> Year 3</label>
+                        <label><input type="radio" name="year" value="4"> Year 4</label>
+                    </div>
+                    <small class="error" id="err-year"></small>
+                </fieldset>
+
+                <div class="form-group">
+                    <label for="interests">Interests</label>
+                    <textarea id="interests" name="interests" rows="3" placeholder="Tell us about your interests and hobbies"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="photoUrl">Photo URL</label>
+                    <input type="url" id="photoUrl" name="photoUrl" placeholder="https://example.com/your-photo.jpg">
+                    <small class="help-text">Optional: Add a link to your profile photo</small>
+                </div>
+
+                <div aria-live="polite" class="sr-only" id="live"></div>
+                
+                <button type="submit" class="btn-primary">Add Student</button>
+            </form>
+        </section>
+
+        <section class="cards-section">
+            <h2>Student Profiles</h2>
+            <div id="cards" class="cards-container">
+                <!-- Profile cards will be dynamically added here -->
+            </div>
+        </section>
+
+        <section class="table-section">
+            <h2>Summary Table</h2>
+            <div class="table-container">
+                <table id="summary">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Programme</th>
+                            <th>Year</th>
+                            <th>Email</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Table rows will be dynamically added here -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Namibia University of Science and Technology</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
