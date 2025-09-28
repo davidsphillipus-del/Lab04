@@ -72,6 +72,7 @@ section h2 {
 /* Form Styles */
 .form-group {
     margin-bottom: 1.5rem;
+    position: relative;
 }
 
 label {
